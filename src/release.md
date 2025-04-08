@@ -7,13 +7,15 @@ Screeni-py is now on **YouTube** for additional help! - Thank You for your suppo
 
 ⚠️ **Executable files (.exe, .bin and .run) are now DEPRECATED! Please Switch to Docker**
 
-1. **NSE Indices** added to find Sectoral opportunities - Try Index `16 > Sectoral Indices` 
-2. **Backtesting Reports** Added for Screening Patterns to Develope and Test Strategies!
-3. **Position Size Calculator** tab added for Better and Quick Risk Management!
-4. **Lorentzian Classification** (invented by Justin Dehorty) added for enhanced accuracy for your trades - - Try `Option > 6 > 7` 🤯
-5. **Artificial Intelligence v3 for Nifty 50 Prediction** - Predict Next day Gap-up/down using Nifty, Gold and Crude prices! - Try `Select Index for Screening > N`
-6. **Search Similar Stocks** Added using Vector Similarity search - Try `Search Similar Stocks`.
-7. New Screener **Buy at Trendline** added for Swing/Mid/Long term traders - Try `Option > 7 > 5`.
+1. Fixed Blank Results issue by upgrading Yahoo Finance API client.
+2. Added **Filters** to Result Table Headers (Apply Filters like Excel as per your strategy!)
+3. Fixed Breakout Screening for **F&O Stocks** (Changed Data Source to Zerodha Kite from NSE website)
+4. **RSI** based **Reversal** using *9 SMA* of RSI - Try `Option > 6 > 8`
+5. **Position Size Calculator** tab added for Better and Quick Risk Management!
+6. **Lorentzian Classification** (invented by Justin Dehorty) added for enhanced accuracy for your trades - - Try `Option > 6 > 7` 🤯
+7. **Artificial Intelligence v3 for Nifty 50 Prediction** - Predict Next day Gap-up/down using Nifty, Gold and Crude prices! - Try `Select Index for Screening > N`
+8. **Search Similar Stocks** Added using Vector Similarity search - Try `Search Similar Stocks`.
+9. New Screener **Buy at Trendline** added for Swing/Mid/Long term traders - Try `Option > 7 > 5`.
 
 ## Installation Guide
 
@@ -34,9 +36,9 @@ Screeni-py is now on **YouTube** for additional help! - Thank You for your suppo
 | | Tag | Pull Command | Run Mode | Run Command |
 |:-: | :-: | --- | --- | --- |
 | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `latest` | `docker pull joshipranjal/screeni-py:latest` | Command Line | `docker run -it --entrypoint /bin/bash joshipranjal/screeni-py:latest -c "run_screenipy.sh --cli"` |
-| ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `latest` | `docker pull joshipranjal/screeni-py:latest` | GUI WebApp | `docker run -p 8501:8501 joshipranjal/screeni-py:latest` |
+| ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `latest` | `docker pull joshipranjal/screeni-py:latest` | GUI WebApp | `docker run -p 8501:8501 -p 8000:8000 joshipranjal/screeni-py:latest` |
 | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `dev` | `docker pull joshipranjal/screeni-py:dev` | Command Line | `docker run -it --entrypoint /bin/bash joshipranjal/screeni-py:dev -c "run_screenipy.sh --cli"` |
-| ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `dev` | `docker pull joshipranjal/screeni-py:dev` | GUI WebApp | `docker run -p 8501:8501 joshipranjal/screeni-py:dev` |
+| ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) | `dev` | `docker pull joshipranjal/screeni-py:dev` | GUI WebApp | `docker run -p 8501:8501 -p 8000:8000 joshipranjal/screeni-py:dev` |
 
 ### Docker Issues? Troubleshooting Guide:
 

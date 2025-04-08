@@ -7,7 +7,7 @@
 
 from classes.ColorText import colorText
 
-VERSION = "2.20"
+VERSION = "2.26"
 
 changelog = colorText.BOLD + '[ChangeLog]\n' + colorText.END + colorText.BLUE + '''
 [1.00 - Beta]
@@ -287,4 +287,23 @@ changelog = colorText.BOLD + '[ChangeLog]\n' + colorText.END + colorText.BLUE + 
 
 [2.20]
 1. Bugfixes - Clear cache button random key added to fix re-rendering issues
+
+[2.21]
+1. Dependency updated - `advanced-ta` lib for bugfixes and performance improvement in Lorentzian Classifier
+
+[2.22]
+1. RSI and 9 SMA of RSI based reversal added - Momentum based execution strategy.
+
+[2.23]
+1. Changed Data Source for F&O Stocks - Using Zerodha Kite instead of Broken NSE Website
+
+[2.24]
+1. Added Filters to Result Table (Special Thanks to https://github.com/koalyptus/TableFilter)
+
+[2.25]
+1. Reduced docker image size by 50% (Special Thanks to https://github.com/smitpsanghavi)
+
+[2.26]
+1. Bugfixes - yfinance package updated to 0.2.54 to fix Yahoo Finance API issue
+2. Minor Improvements to maintain backward compatibility of the yfinance df
 ''' + colorText.END
